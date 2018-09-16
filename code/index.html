@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+
+  <section class="container">
+    <form action="http://httpbin.org/anything" method="POST">
+      <h2>Create an account</h2>
+      <p>By creating an account, you will be able to move through the
+        checkout process faster, store multiple shipping addresses,
+        view and track your orders and more.
+        <br />Fill in your details below:
+      </p>
+      <div class="field">
+        <label>Firstname *
+          <input type="text" name="firstName" required />
+        </label>
+      </div>
+
+      <div class="field">
+        <label>
+          Lastname *
+          <input type="text" name="surName" required />
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="email">Email *</label>
+        <input type="email" name="emailAdress" required/>
+      </div>
+
+      <div class="field">
+        <label for="psw">Password *</label>
+        <input type="password" name="password" required></textarea>
+      </div>
+
+      <div class="field">
+        <label for="psw">Confirm Password *</label>
+        <input type="password" name="password" required></textarea>
+      </div>
+
+      <div class="field">
+        <input type="radio" name="gender" value="Womenswear" >
+        <label for="wmnsWear">Womenswear</label>
+        <input type="radio" name="gender" value="Menswear" >
+        <label for="mensWear">Menswear</label>
+      </div>
+
+      <div class="field">
+        <input type="checkbox" id="consent" name="clothing" value="box" >
+        <label for="consent"> I hereby sign up to become a member, and confirm that I accept the <span>membership policy</span> and that I have read and understand the <span>privacy policy</span></label>
+      </div>
+
+      <button>Submit</button>
+    </form>
+
+      <div class="containerImgDesktop">
+        <img src="motor.jpg" />
+      </div>
+      <div class="containerImgTablet">
+        <img src="motor3.jpeg" />
+      </div>
+
+    </section>
+  </body>
+</html>

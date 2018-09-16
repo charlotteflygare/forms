@@ -1,0 +1,101 @@
+div {
+  /* padding: 10px; */
+}
+
+form {
+  width: 60%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  justify-content: center;
+  /* background: #f8f8f8; */
+}
+
+h2 {
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 200;
+  color: #333333;
+}
+
+p {
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 200;
+  color: #333333;
+
+}
+
+img {
+  height: 900px;
+  width: auto;
+}
+.containerImg {
+  width: 50%;
+  display: inline;
+  float: right;
+  /* display: flex;
+  justify-content: flex-end;
+  border-right: 1px solid black;
+  flex-direction: row;
+  align-items: flex-end; */
+}
+
+.container {
+  width: 50%;
+  display: inline;
+  float: left;
+  /* display: flex;
+  justify-content: flex-start;
+  border-right: 1px solid black;
+  flex-direction: row;
+  align-items: flex-start; */
+}
+
+label {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  padding: 0px;
+  line-height: 22px;
+}
+
+.field,
+.actions {
+  padding: 10px;
+}
+
+
+input,
+textarea {
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+ display: inline;
+ width: auto;
+ margin-right: 7px;
+}
+
+span {
+  text-decoration: underline;
+}
+button {
+  margin-top: 5%;
+  float: center;
+  width: 100%;
+  color: white;
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #444444;
+}
