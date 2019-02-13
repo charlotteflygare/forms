@@ -9,7 +9,11 @@
   <body>
 
   <section class="container">
-    <form action="http://httpbin.org/anything" method="POST">
+    <div class="container-img-tablet">
+      <img src="4b.gif" />
+    </div>
+    <div class="form">
+        <form action="http://httpbin.org/anything" method="POST">
       <h2>Create an account</h2>
       <p>By creating an account, you will be able to move through the
         checkout process faster, store multiple shipping addresses,
@@ -44,11 +48,11 @@
         <input type="password" name="password" required></textarea>
       </div>
 
-      <div class="field">
+      <div class="field" >
         <input type="radio" name="gender" value="Womenswear" >
-        <label for="wmnsWear">Womenswear</label>
+        <label for="wmnsWear" id="gender-clothing">Womenswear</label>
         <input type="radio" name="gender" value="Menswear" >
-        <label for="mensWear">Menswear</label>
+        <label for="mensWear ">Menswear</label>
       </div>
 
       <div class="field">
@@ -58,13 +62,11 @@
 
       <button>Submit</button>
     </form>
+  </div>
 
-      <div class="containerImgDesktop">
-        <img src="motor.jpg" />
-      </div>
-      <div class="containerImgTablet">
-        <img src="motor3.jpeg" />
-      </div>
+    <div class="container-img-desktop">
+    </div>
+
 
     </section>
   </body>

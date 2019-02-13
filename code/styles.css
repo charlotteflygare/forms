@@ -1,13 +1,14 @@
-html {
+* {
   box-sizing: border-box;
 }
+
 
 p {
   padding: 10px;
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   line-height: 22px;
-  font-weight: 200;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -16,7 +17,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 22px;
-  font-weight: 200;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -26,7 +27,7 @@ img {
 }
 
 form {
-  width: 40%;
+  width: 100%;
   margin-left: 30px;
   margin-right: 50px;
   margin-bottom: 10px;
@@ -55,8 +56,8 @@ input:focus {
   background-color: #ffffff;
 }
 
-.containerImgTablet {
-  display: 100%;
+.container-img-tablet {
+  display: block;
 }
 
 .container {
@@ -66,11 +67,16 @@ input:focus {
   height: auto;
 }
 
+
 label {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
   padding: 0px;
   line-height: 22px;
+}
+
+label#gender-clothing  {
+  padding: 0 10px 0 0;
 }
 
 .field,
@@ -91,6 +97,7 @@ input[type="radio"]{
   display: inline;
   width: auto;
   margin-right: 7px;
+  padding-left: 7px;
 }
 
 span {
@@ -115,6 +122,9 @@ button {
     flex-wrap: wrap;
     width: 100%;
 }
+.form {
+  width: 100%;
+}
   form {
     width: 80%;
     margin-left: 10px;
@@ -124,15 +134,16 @@ button {
     justify-content: center;
     order: 2;
 }
-  .containerImgDesktop {
+  .container-img-desktop {
     display: none;
 }
-  .containerImgTablet {
+  .container-img-tablet {
+    height: auto;
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 1000px) {
+@media only screen and (min-width: 400px) and (max-width: 900px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -140,27 +151,47 @@ button {
     width: 100%;
 }
   form {
-    width: 80%;
-    margin-left: 30px;
-    margin-right: 50px;
+    width: 90%;
+    /* margin-left: 30px; */
+    /* margin-right: 50px; */
     margin-bottom: 50px;
     padding: 10px;
     justify-content: center;
     order: 2;
 }
-  .containerImgDesktop {
+  .container-img-desktop {
     display: none;
 }
-  .containerImgTablet {
+  .container-img-tablet {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .containerImgTablet {
+@media only screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.form {
+  width: 60%;
+}
+form {
+  width: 80%;
+  margin-right: 15px;
+  margin-bottom: 50px;
+  padding: 10px;
+  justify-content: center;
+  order: 2;
+}
+  .container-img-tablet{
     display: none;
   }
-  .containerImgDesktop {
-    width: 60%;
+  .container-img-desktop {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("6c.jpg");
   }
 }
